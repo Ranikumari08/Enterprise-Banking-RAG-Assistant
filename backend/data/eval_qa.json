@@ -1,0 +1,212 @@
+[
+  {
+    "id": "eval_0",
+    "question": "According to Table\u202f1, what are the $5,000 and $2,500 values listed for the Student Accounts under Premium Savings?",
+    "ground_truth_answer": "For the Student Accounts, the $5,000 value is $0 and the $2,500 value is $10.",
+    "ground_truth_context": "Table 1: Premium Savings, $5, 000, $2, 500.\nRow 1: Premium Savings = Elite Savings, $5, 000 = $25, 000, $2, 500 = $10, 000.\nRow 2: Premium Savings = Student Accounts, $5, 000 = $0, $2, 500 = $10.\nRow 3: Premium Savings = Salary Accounts, $5, 000 = $0, $2, 500 = $0.\nRow 4: Premium Savings = Senior Citizen Special, $5, 000 = $250, $2, 500 = $100.",
+    "ground_truth_doc_id": "f5375a8af429",
+    "metadata": {
+      "doc_id": "f5375a8af429",
+      "file_name": "Minimum Balance & Charges Policy.pdf",
+      "chunk_id": "f5375a8af429_chunk_0003",
+      "page_number_range": "2-2",
+      "contains_table": true,
+      "table_count": 1,
+      "chunk_index": 3,
+      "total_chunks_in_doc": 7,
+      "version": "v1",
+      "ingestion_timestamp": "2026-02-23T16:29:49.045865+00:00",
+      "source_type": "pdf",
+      "document_type": "bank_policy"
+    }
+  },
+  {
+    "id": "eval_1",
+    "question": "What is the fee charged to issue a new card when a card is stolen, and for which cardholder categories is this fee waived?",
+    "ground_truth_answer": "The fee for issuing a new card after it has been stolen is **$15.00**. This replacement fee is **waived for Elite and Signature cardholders** as part of their premium benefits package. All other cardholders must pay the full $15.00 replacement charge.",
+    "ground_truth_context": "to availability).\n\u25cf Standing Instructions (Set-up): $5.00 one-time fee.\n\u25cf Notary/Legal Verification (In-Branch): $25.00 per document.\n7. Grace Periods and Waivers\n\u25cf First-Month Waiver: No AMB charges are applied during the first full calendar month of\naccount opening.\n\u25cf Senior Citizens (60+): 50% waiver on all administrative and service request charges.\n\u25cf Student Accounts: 100% waiver on annual card fees and quarterly service fees.\n8. Frequently Asked Questions (FAQ)\nAre there any charges for using other banks' ATMs?\nYes. While usage at Apex Global Bank ATMs is always free, you are allowed 5 free transactions\nat other banks' ATMs per month. Starting with the 6th transaction, a fee of $2.50 applies.\nWhat is the card replacement fee if my card is stolen?\nA replacement fee of $15.00 is charged to issue a new card. However, for Elite and Signature\ncardholders, this fee is waived as part of the premium benefits package.\nDo I have to pay for SMS alerts?\nA nominal fee of $0.50 per quarter is charged to cover the cost of secure gateway delivery for\ntransaction alerts. This ensures you are notified instantly of any activity on your account for\nfraud prevention.\nWhy was I charged an \"Inward Check Return\" fee?\nThis fee occurs if a check you issued is presented for payment but your account has\ninsufficient funds to cover it. The $35 fee covers the administrative and penalty costs\nassociated with the failed clearing process.\nInstitutional Notice: Service pricing is reviewed bi-annually. Any upward revision of fees will\nbe communicated to customers 30 days in advance via registered email and website updates.\nEnd of Document",
+    "ground_truth_doc_id": "84a599557d47",
+    "metadata": {
+      "doc_id": "84a599557d47",
+      "file_name": "Charges, Fees & Service Pricing Document.pdf",
+      "chunk_id": "84a599557d47_chunk_0005",
+      "page_number_range": "3-3",
+      "contains_table": false,
+      "table_count": 0,
+      "chunk_index": 5,
+      "total_chunks_in_doc": 6,
+      "version": "v1",
+      "ingestion_timestamp": "2026-02-23T16:29:49.034361+00:00",
+      "source_type": "pdf",
+      "document_type": "bank_policy"
+    }
+  },
+  {
+    "id": "eval_2",
+    "question": "On which specific day of the month does the bank send an SMS/Email alert if a customer's balance is trending toward a shortfall?",
+    "ground_truth_answer": "The bank sends an advance warning SMS/Email alert on the **20th of the month** when a customer's balance is trending toward a shortfall, giving the customer an opportunity to take corrective action.",
+    "ground_truth_context": "specific segments:\n\u25cf Zero-Balance Accounts: Student and Salary accounts are strictly \"Zero-Balance\" and\nwill never incur non-maintenance penalties.\n\u25cf Government Schemes: Accounts opened under specific financial inclusion programs\nare exempt from all AMB requirements.\n\u25cf Senior Citizens: Individuals aged 60+ receive a 50% discount on all non-maintenance\npenalties.\n\u25cf First-Month Grace Period: No penalties are levied during the first calendar month of\naccount opening to allow for initial funding.\n7. Communication and Transparency\n\u25cf Advance Warning: If a customer's balance is trending toward a shortfall, the bank will\nsend an SMS/Email alert on the 20th of the month to allow for corrective action.\n\u25cf Charge Notification: Any penalty debited from the account will be accompanied by an\nimmediate SMS notification explaining the reason for the charge.\n8. Frequently Asked Questions (FAQ)\nWhat is the minimum balance for a standard account?\nFor a Basic Savings account, the Average Monthly Balance (AMB) required is $500. For\nStudent or Salary accounts, the requirement is $0.\nWhat happens if I don\u2019t maintain the balance for just one day?\nBecause we use the Average Monthly Balance method, falling below the limit for a single\nday does not automatically trigger a penalty. As long as your average across the whole month\nstays above the requirement, no fee is charged.\nHow are the penalties calculated?\nPenalties are calculated at the end of the calendar month. The system looks at the\npercentage of the shortfall. For example, if you are supposed to keep $500 but only kept\n$400, your shortfall is 20%, placing you in the lowest penalty bracket.\nCan I avoid fees by closing the account?\nYes, if you choose to close your account, no further maintenance fees will apply once the\nclosure process is finalized. However, any accrued penalties for the current month must be\nsettled before closure.\nInstitutional Notice:",
+    "ground_truth_doc_id": "f5375a8af429",
+    "metadata": {
+      "doc_id": "f5375a8af429",
+      "file_name": "Minimum Balance & Charges Policy.pdf",
+      "chunk_id": "f5375a8af429_chunk_0004",
+      "page_number_range": "3-3",
+      "contains_table": false,
+      "table_count": 0,
+      "chunk_index": 4,
+      "total_chunks_in_doc": 7,
+      "version": "v1",
+      "ingestion_timestamp": "2026-02-23T16:29:49.045865+00:00",
+      "source_type": "pdf",
+      "document_type": "bank_policy"
+    }
+  },
+  {
+    "id": "eval_3",
+    "question": "Which complaint category listed has the longest resolution time, and what is the specific resolution time range for that category?",
+    "ground_truth_answer": "The complaint category with the longest resolution time is **Credit Card Disputes**. According to the table, its resolution time is **15\u202f\u2013\u202f45 Business Days**. This range is longer than the resolution times for all other categories listed.",
+    "ground_truth_context": "Table 1: Complaint Category, Acknowledgement, Resolution Time.\nRow 1: Complaint Category = Digital Transaction Errors, Acknowledgement = 24 Hours, Resolution Time = 7 Business Days.\nRow 2: Complaint Category = Account Opening / KYC Issues, Acknowledgement = 24 Hours, Resolution Time = 3 Business Days.\nRow 3: Complaint Category = Credit Card Disputes, Acknowledgement = 48 Hours, Resolution Time = 15 - 45 Business Days.\nRow 4: Complaint Category = Staff Behavior / Service, Acknowledgement = 24 Hours, Resolution Time = 5 Business Days.\nRow 5: Complaint Category = General Inquiries, Acknowledgement = Immediate, Resolution Time = 48 Hours.",
+    "ground_truth_doc_id": "66dc67273942",
+    "metadata": {
+      "doc_id": "66dc67273942",
+      "file_name": "Customer Grievance Redressal Policy.pdf",
+      "chunk_id": "66dc67273942_chunk_0002",
+      "page_number_range": "2-2",
+      "contains_table": true,
+      "table_count": 1,
+      "chunk_index": 2,
+      "total_chunks_in_doc": 4,
+      "version": "v1",
+      "ingestion_timestamp": "2026-02-23T16:29:49.016411+00:00",
+      "source_type": "pdf",
+      "document_type": "bank_policy"
+    }
+  },
+  {
+    "id": "eval_4",
+    "question": "According to the SOP, what two documents are mandatory for releasing funds from a deceased depositor's account when there is no registered nominee?",
+    "ground_truth_answer": "When no nominee is registered for a deceased depositor, the SOP requires the submission of either a **\u201cSuccession Certificate\u201d** or a **\u201cLetter of Administration.\u201d** These documents serve as legal proof of the claimant\u2019s right to the funds and must be provided before the bank will release the account balance.",
+    "ground_truth_context": "access is generally not granted to PoA holders; they must operate via branch-based\nrequests.\n5.2 Deceased Depositor Claims\n\u25cf Scenario: Claiming funds from the account of a deceased relative.\n\u25cf SOP: If a nominee is registered, funds are released upon submission of a Death\nCertificate and Nominee ID. If no nominee exists, a \"Succession Certificate\" or \"Letter of\nAdministration\" is mandatory.\n6. Digital Safety Checklist for Customers\n\u25cf Change your password every 90 days.\n\u25cf Enable Bio-metric login on the ApexOne App.\n\u25cf Never click on links in SMS/Emails that ask for your banking credentials.\n\u25cf Check the 'Last Login' timestamp every time you enter Net Banking.\n7. Operational Contact Directory\nDepartment Contact Method Internal Ext.\nIT Support helpdesk@apexbank.int 101\nCard Hotlisting emergency.cards@apexba 999\nnk.int\nLegal/Compliance compliance@apexbank.int 205\nTreasury (Rates) forex.desk@apexbank.int 302\nEnd of SOP Document Building Excellence through Consistency.",
+    "ground_truth_doc_id": "02ca2f8146a4",
+    "metadata": {
+      "doc_id": "02ca2f8146a4",
+      "file_name": "Bank FAQs & Standard Operating Procedures (SOP).pdf",
+      "chunk_id": "02ca2f8146a4_chunk_0003",
+      "page_number_range": "3-3",
+      "contains_table": false,
+      "table_count": 0,
+      "chunk_index": 3,
+      "total_chunks_in_doc": 5,
+      "version": "v1",
+      "ingestion_timestamp": "2026-02-23T16:29:48.962183+00:00",
+      "source_type": "pdf",
+      "document_type": "bank_policy"
+    }
+  },
+  {
+    "id": "eval_5",
+    "question": "Through which channels can an existing customer apply for a debit card according to the document?",
+    "ground_truth_answer": "Existing customers can apply via the \"Request Services\" section of the ApexOne mobile app or by visiting a branch.",
+    "ground_truth_context": " merchant/network. Standard resolution\ntime is 45\u201360 days.\n4. Zero Liability: If reported within 72 hours and no negligence is found on the customer's\npart, the customer is not liable for the loss.\n10. Frequently Asked Questions (FAQ)\nHow do I get a debit card?\nIf you are a new customer, it is issued automatically. Existing customers can apply via the\n\"Request Services\" section of the ApexOne mobile app or by visiting a branch.",
+    "ground_truth_doc_id": "ecfb775e5f68",
+    "metadata": {
+      "doc_id": "ecfb775e5f68",
+      "file_name": "Debit Card Issuance & Usage Policy.pdf",
+      "chunk_id": "ecfb775e5f68_chunk_0004",
+      "page_number_range": "3-3",
+      "contains_table": false,
+      "table_count": 0,
+      "chunk_index": 4,
+      "total_chunks_in_doc": 6,
+      "version": "v1",
+      "ingestion_timestamp": "2026-02-23T16:29:49.041519+00:00",
+      "source_type": "pdf",
+      "document_type": "bank_policy"
+    }
+  },
+  {
+    "id": "eval_6",
+    "question": "According to Table\u202f1, what is the fee structure for the \u201cAMB Non-Maintenance\u201d service item for each of the three account types listed?",
+    "ground_truth_answer": "- **Basic Savings:** The fee is tiered, ranging from **$2 to $5** depending on the applicable tier.  \n- **Premium Savings:** The fee is a **flat $25** charge.  \n- **Elite / Salary:** The service is **exempt**, meaning no fee is applied.",
+    "ground_truth_context": "Table 1: Service Item, Basic Savings, Premium Savings, Elite / Salary.\nRow 1: Service Item = Account Opening, Basic Savings = $0, Premium Savings = $0, Elite / Salary = $0.\nRow 2: Service Item = Monthly Maintenance, Basic Savings = $0, Premium Savings = $0, Elite / Salary = $0.\nRow 3: Service Item = AMB Non-Maintenance, Basic Savings = Tiered ($2 - $5), Premium Savings = Flat $25, Elite / Salary = Exempt.\nRow 4: Service Item = Dormancy Activation, Basic Savings = $10, Premium Savings = $5, Elite / Salary = $0.\nRow 5: Service Item = Quarterly Service Fee, Basic Savings = $2, Premium Savings = $0, Elite / Salary = $0.",
+    "ground_truth_doc_id": "84a599557d47",
+    "metadata": {
+      "doc_id": "84a599557d47",
+      "file_name": "Charges, Fees & Service Pricing Document.pdf",
+      "chunk_id": "84a599557d47_chunk_0001",
+      "page_number_range": "1-1",
+      "contains_table": true,
+      "table_count": 1,
+      "chunk_index": 1,
+      "total_chunks_in_doc": 6,
+      "version": "v1",
+      "ingestion_timestamp": "2026-02-23T16:29:49.034361+00:00",
+      "source_type": "pdf",
+      "document_type": "bank_policy"
+    }
+  },
+  {
+    "id": "eval_7",
+    "question": "**** What are the three methods described for PIN generation, and which method requires the user to select \u201cGenerate\u202fGreen\u202fPIN\u201d after inserting the card at an AGB ATM?\n\n**",
+    "ground_truth_answer": "**  \nThe document lists three distinct methods for generating a PIN:\n\n1. **Mobile App (ApexOne)** \u2013 The user navigates to **Cards\u202f>\u202fManage Card\u202f>\u202fSet PIN** within the ApexOne mobile application.  \n2. **ATM** \u2013 The user inserts the card at any **AGB ATM**, selects **\u201cGenerate\u202fGreen\u202fPIN\u201d**, and then enters the OTP that is sent to the registered mobile number.  \n3. **Net Banking** \u2013 The user goes to the **\u2018Cards\u2019** tab in the Net Banking portal and selects **\u201cInstant PIN Generation.\u201d**\n\nThe method that specifically requires selecting **\u201cGenerate\u202fGreen\u202fPIN\u201d** is the **ATM** method. This step is performed after the card is inserted into an AGB ATM, and it is followed by OTP verification.",
+    "ground_truth_context": "to activate the card.\n4.1 Methods for PIN Generation:\n1. Mobile App (ApexOne): Navigate to Cards > Manage Card > Set PIN.\n2. ATM: Insert card at any AGB ATM and select 'Generate Green PIN' using the OTP sent to\nthe registered mobile number.\n3. Net Banking: Under the 'Cards' tab, select 'Instant PIN Generation'.\n5. Daily Transaction Limits\nLimits are refreshed every 24 hours at 00:00 local time.\nCard Variant ATM Withdrawal POS/Online Contactless (Tap)\nLimit Purchase Limit Limit\nClassic (Basic) $500 $2,000 $50\nPlatinum $2,000 $10,000 $100\n(Premium)\nSignature (Elite) $5,000 $25,000 $200\nNote: Contactless limits are subject to local regulatory caps per transaction. Customers may\nlower these limits via the App for enhanced security.\n6. Domestic vs. International Usage\n\u25cf Default Status: New cards are enabled for Domestic Usage (POS & ATM) only by\ndefault.\n\u25cf Enabling International/E-commerce: Customers must manually enable International\nusage and Online (E-com) transactions via the ApexOne mobile app to prevent\nunauthorized cross-border fraud.\n\u25cf Currency Conversion: A markup fee of 2.5% applies to all international transactions.\n7. Advanced Security & Fraud Prevention\n7.1 Card Control Features\nThrough the ApexOne app, customers have 24/7 access to:\n\u25cf Temporary Lock: Instantly disable the card if misplaced, and unlock it when found.\n\u25cf Channel Management: Independently toggle ATM, POS, E-commerce, and Contactless\nchannels.\n\u25cf Merchant Category Blocking: Restrict usage at specific types of merchants (e.g.,",
+    "ground_truth_doc_id": "ecfb775e5f68",
+    "metadata": {
+      "doc_id": "ecfb775e5f68",
+      "file_name": "Debit Card Issuance & Usage Policy.pdf",
+      "chunk_id": "ecfb775e5f68_chunk_0001",
+      "page_number_range": "2-2",
+      "contains_table": false,
+      "table_count": 0,
+      "chunk_index": 1,
+      "total_chunks_in_doc": 6,
+      "version": "v1",
+      "ingestion_timestamp": "2026-02-23T16:29:49.041519+00:00",
+      "source_type": "pdf",
+      "document_type": "bank_policy"
+    }
+  },
+  {
+    "id": "eval_8",
+    "question": "What documentation must expatriate or non-resident applicants provide to satisfy the residency and citizenship eligibility criteria?",
+    "ground_truth_answer": "Expatriate or non-resident applicants are required to provide a valid work permit or residency visa that has at least six months of remaining validity. This requirement is specified in section\u202f3.2 \u201cResidency and Citizenship\u201d of the document.",
+    "ground_truth_context": "2.2 Know Your Customer (KYC) Standards\nKYC is not merely a documentation check but a risk-based assessment.\n\u25cf Customer Due Diligence (CDD): Standard verification for low-risk individuals.\n\u25cf Enhanced Due Diligence (EDD): Applied to high-risk jurisdictions, non-resident\naccounts, and high-net-worth individuals.\n3. Detailed Eligibility Criteria\n3.1 Individual Applicants\n\u25cf Age Requirements:\n\u25cb Standard Adults: 18\u201359 years.\n\u25cb Seniors: 60+ years (eligible for specialized benefits).\n\u25cb Minors: 0\u201317 years (must be represented by a legal guardian).\n\u25cf Legal Standing: Applicants must not have been debarred by any court of law from\nholding a bank account.\n3.2 Residency and Citizenship\n\u25cf Domestic Residents: Must possess a valid permanent address and local tax\nidentification.\n\u25cf Expatriates/Non-Residents: Must provide a valid work permit or residency visa with at\nleast 6 months remaining validity.\n\u25cf Cross-Border Applicants: Subject to the \"Foreign Account Tax Compliance Act\"\n(FATCA) and \"Common Reporting Standard\" (CRS) protocols.\n4. Comprehensive Account Tiering System\nApex Global Bank offers a diversified portfolio of savings products. Each tier is designed to\ncater to specific economic segments.\nAccount Tier Target Audience Intended Usage\nBasic Savings Entry-level earners Everyday transactions and\nemergency funds.\nPremium Savings Mid-career professionals Wealth accumulation with\nmoderate liquidity.\nElite Savings High-Net-Worth (HNW) Wealth management and\npriority banking access.\nStudent Savings Enrolled Students (18-25) Financial literacy and",
+    "ground_truth_doc_id": "1c028f6e3b49",
+    "metadata": {
+      "doc_id": "1c028f6e3b49",
+      "file_name": "Savings Account Opening Policy.pdf",
+      "chunk_id": "1c028f6e3b49_chunk_0001",
+      "page_number_range": "2-2",
+      "contains_table": false,
+      "table_count": 0,
+      "chunk_index": 1,
+      "total_chunks_in_doc": 9,
+      "version": "v1",
+      "ingestion_timestamp": "2026-02-23T16:29:48.975107+00:00",
+      "source_type": "pdf",
+      "document_type": "bank_policy"
+    }
+  },
+  {
+    "id": "eval_9",
+    "question": "According to the document header, who are the listed owners of the APEX GLOBAL BANK Credit Card Application & Eligibility Policy (Extended Version)?",
+    "ground_truth_answer": "The policy owners are the Chief Credit Officer (CCO) and the Risk Management Department.",
+    "ground_truth_context": "APEX GLOBAL BANK: CREDIT CARD\nAPPLICATION & ELIGIBILITY POLICY\n(EXTENDED VERSION)\nDocument Classification: Internal / Regulatory Compliance & Customer Disclosure\nDocument ID: AGB-CRD-2026-04\nEffective Date: February 4, 2026\nLast Revised: February 4, 2026\nPolicy Owner: Chief Credit Officer (CCO) & Risk Management Department\n1. Executive Summary & Policy Vision\n1.1 Institutional Commitment\nApex Global Bank (AGB) is committed to responsible lending. Our credit card products are\ndesigned to provide liquidity and financial flexibility to our customers while maintaining the\nhighest standards of risk mitigation. This policy serves as the primary governance document\nfor all credit card issuances globally.\n1.2 Mission Statement\nTo empower our clients with world-class credit products while ensuring that every line of\ncredit extended is sustainable, transparent, and compliant with international banking\nstandards.\n2. Regulatory Compliance & Global Framework\n2.1 Anti-Money Laundering (AML) & Know Your Customer (KYC)\nEvery credit card application undergoes a multi-layered screening process:\n\u25cf Sanctions Screening: Verification against UN, OFAC, EU, and local jurisdictional\nwatchlists.\n\u25cf CDD/EDD: Customer Due Diligence is performed on all applicants, with Enhanced Due\nDiligence (EDD) for high-risk profiles or non-resident applicants.\n2.2 FATCA & CRS Compliance\nAs a global entity, AGB complies with the Foreign Account Tax Compliance Act (FATCA) and",
+    "ground_truth_doc_id": "6b058bd3be2d",
+    "metadata": {
+      "doc_id": "6b058bd3be2d",
+      "file_name": "Credit Card Application & Eligibility Policy.pdf",
+      "chunk_id": "6b058bd3be2d_chunk_0000",
+      "page_number_range": "1-1",
+      "contains_table": false,
+      "table_count": 0,
+      "chunk_index": 0,
+      "total_chunks_in_doc": 8,
+      "version": "v1",
+      "ingestion_timestamp": "2026-02-23T16:29:49.030269+00:00",
+      "source_type": "pdf",
+      "document_type": "bank_policy"
+    }
+  }
+]

@@ -1,0 +1,59 @@
+# =========================
+# Python
+# =========================
+**/__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+**/*.egg-info/
+**/wheels/
+
+# Virtual environments
+**/venv/
+**/.venv/
+**/env/
+evaluation/ragas_env/
+
+# =========================
+# Environment / Secrets
+# =========================
+.env
+.env.*
+!.env.example
+
+# =========================
+# Node / Frontend
+# =========================
+**/node_modules/
+**/dist/
+**/build/
+**/.vite/
+
+# =========================
+# Databases / Vector Stores
+# =========================
+**/chroma_db/
+**/chromadb/
+**/processed/
+*.sqlite
+*.db
+
+# =========================
+# Logs
+# =========================
+*.log
+
+# =========================
+# IDE
+# =========================
+.vscode/
+.idea/
+
+# =========================
+# OS
+# =========================
+.DS_Store
+Thumbs.db
+
+# Search indexes
+**/whoosh_index/
