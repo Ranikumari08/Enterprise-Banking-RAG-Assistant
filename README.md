@@ -36,8 +36,6 @@ of **300 question-answer pairs** derived from 10 official Apex Global Bank polic
 | **Context Precision** | **0.72** | Are the retrieved chunks relevant to the question? |
 | **Context Recall** | **0.68** | Did retrieval fetch all information needed to answer? |
 
-### Score Interpretation
-
 
 ### Evaluation by Category
 
