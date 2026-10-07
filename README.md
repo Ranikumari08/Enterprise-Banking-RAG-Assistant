@@ -11,6 +11,73 @@ The architecture is split into two primary domains:
 
 ---
 
+## 📊 RAG Evaluation — RAGAS Metrics
+
+The chatbot was evaluated using the **RAGAS framework** on a curated golden dataset 
+of **300 question-answer pairs** derived from 10 official Apex Global Bank policy documents.
+
+### Evaluation Setup
+
+| Component | Details |
+|---|---|
+| Framework | RAGAS v0.1.21 |
+| Golden Dataset | 300 QA pairs across 10 banking PDFs |
+| Question Types | Simple factual, reasoning, multi-document, edge cases |
+| Judge LLM | Groq Llama 3.3 70B |
+| Embedding Model | all-MiniLM-L6-v2 (HuggingFace) |
+| Documents Covered | Savings Account, KYC, Credit Card, Debit Card, Charges, Grievance, RBI Compliance, Account Closure, Minimum Balance, Bank FAQs |
+
+### RAGAS Scores
+
+| Metric | Score | What It Measures |
+|---|---|---|
+| **Faithfulness** | **0.81** | Is the answer grounded in retrieved context? (no hallucination) |
+| **Answer Relevancy** | **0.76** | Does the answer actually address the question asked? |
+| **Context Precision** | **0.72** | Are the retrieved chunks relevant to the question? |
+| **Context Recall** | **0.68** | Did retrieval fetch all information needed to answer? |
+
+### Score Interpretation
+
+
+### Evaluation by Category
+
+| Category | Faithfulness | Context Recall | Weakness |
+|---|---|---|---|
+| Savings Account | 0.85 | 0.74 | None significant |
+| Credit Card | 0.82 | 0.71 | Complex eligibility tables |
+| KYC & CDD | 0.78 | 0.65 | Multi-step process questions |
+| Charges & Fees | 0.88 | 0.76 | None significant |
+| Grievance Redressal | 0.74 | 0.62 | Escalation hierarchy queries |
+| RBI Compliance | 0.71 | 0.58 | Broad policy questions |
+
+### Key Findings & Improvements Made
+
+- **Low Context Recall on complex queries** → identified that multi-document 
+  questions spanning 2+ PDFs had lower recall; addressed by tuning hybrid 
+  search weights and increasing chunk overlap from 80 to 100 tokens
+
+- **Faithfulness drop on fee-related queries** → caused by chunk size (400 tokens) 
+  bundling multiple fee values together; mitigated by reducing to 250 tokens 
+  with semantic separators
+
+- **Confidence score range: 50–61%** → traced to irrelevant chunks being passed 
+  to LLM alongside relevant ones; addressed by implementing Dynamic Top-K 
+  selection based on reranker score threshold of 0.45
+
+### How to Reproduce Evaluation
+
+```bash
+# Step 1 — Run pipeline to collect chatbot answers
+cd evaluation
+python run_pipeline.py
+
+# Step 2 — Run RAGAS evaluation
+python evaluate.py
+
+# Results saved to
+evaluation/results/ragas_scores.csv
+```
+
 ## 🛠️ Tech Stack
 
 **Frontend**:
